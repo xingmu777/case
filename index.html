@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/base.css">
+</head>
+<body>
+    <!-- 开头问候布局开始 -->
+    <div>
+        <div class="hello warp">
+            <h2 class="nows">当前时间：</h2>
+            <div class="hello_img" style="background-position:0 0"></div>
+            <h1>早上好¿($_$)</h1>
+        </div>
+    </div>
+    <form action="#">
+        <div>
+            <input type="radio" name="hello" title="早上" onclick="helloChange(title)">早上
+        </div>
+        <div>
+            <input type="radio" name="hello" title="下午" onclick="helloChange(title)">下午
+        </div>
+        <div>
+            <input type="radio" name="hello" title="晚上" onclick="helloChange(title)">晚上
+        </div>
+    </form>
+    <!-- 开头问候布局结束 -->
+    <!-- 点击关闭二维码开始 -->
+    <div class="code warp">
+        <input id="QR_code" type="checkbox" title="手机淘宝" name="QR_code" onclick="qrChange('show')">打开二维码
+        <label for="QR_code" class="qrcode"><h2>手机淘宝</h2></label>
+    </div>
+    <!-- 点击关闭二维码结束 -->
+    <!-- 循环精灵图开始 -->
+    <div class="warp">
+        <ul class="cycle">
+            <li><div></div><p></p></li>
+            <li><div></div><p></p></li>
+            <li><div></div><p></p></li>
+            <li><div></div><p></p></li>
+            <li><div></div><p></p></li>
+            <li><div></div><p></p></li>
+            <li><div></div><p></p></li>
+            <li><div></div><p></p></li>
+        </ul>
+    </div>
+    <!-- 循环精灵图结束 -->
+    <!-- 设置密码开始 -->
+     <div class="Pass warp">
+        <div>
+            <span>*</span>
+            <span>设置密码：</span>
+        </div>
+        <input id="PassWord" type="password" placeholder="请输入密码（6-16位）" onblur="Hinttext()">
+        <div class="wrong">
+            <img src="./images/wrong.png" alt="错误">
+            请再次输入登录密码
+        </div>
+        <div class="right">
+            <img src="./images/right.png" alt="正确">
+            登录成功
+        </div>
+     </div>
+    <!-- 设置密码结束 -->
+    <!-- 全选不选和反选开始 -->
+    <div class="warp">
+        <input class="Sel_code" type="checkbox" title="0000" name="0">
+        <input class="Sel_code" type="checkbox" title="0001" name="1">
+        <input class="Sel_code" type="checkbox" title="0010" name="2">
+        <input class="Sel_code" type="checkbox" title="0011" name="3">
+        <input class="Sel_code" type="checkbox" title="0100" name="4">
+        <input class="Sel_code" type="checkbox" title="0101" name="5">
+        <input class="Sel_code" type="checkbox" title="0110" name="6">
+        <input class="Sel_code" type="checkbox" title="0111" name="7">
+        <input class="Sel_code" type="checkbox" title="1000" name="8">
+        <input class="Sel_code" type="checkbox" title="1001" name="9">
+        <input class="Sel_code" type="checkbox" title="1010" name="10">
+        <input class="Sel_code" type="checkbox" title="1011" name="11">
+        <input class="Sel_code" type="checkbox" title="1100" name="12">
+        <input class="Sel_code" type="checkbox" title="1101" name="13">
+        <input class="Sel_code" type="checkbox" title="1110" name="14">
+        <input class="Sel_code" type="checkbox" title="1111" name="15">
+        <button class="all" onclick="selectCheck('all')">全选</button>
+        <button class="none" onclick="selectCheck('none')">不选</button>
+        <button class="reverse" onclick="selectCheck('reverse')">反选</button>
+    </div>
+    <!-- 全选不选和反选结束 -->
+</body>
+<script src="./js/index.js"></script>
+</html>

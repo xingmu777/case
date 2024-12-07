@@ -1,0 +1,37 @@
+/*公共样式*/
+* {
+	/*清除浏览器默认内外边距*/
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	/*清除a标签的下划线*/
+	text-decoration: none;
+}
+
+/*清除高亮显示*/
+*::selection {
+	background: none;
+}
+
+/*清除input初始化样式*/
+input {
+	border: none;
+	outline: none;
+	border: 1px solid #000;
+}
+
+/*清除小圆点*/
+ul li {
+	list-style: none;
+}
+
+/*清除浮动*/
+.clearfix::after {
+	content: '';
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}

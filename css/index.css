@@ -1,0 +1,113 @@
+/* 版心 */
+.warp {
+    width: 80vw;
+    margin: 5px auto;
+}
+
+/* 隐藏 */
+.show {
+    display: inline-block !important;
+}
+
+/* 开头问候 */
+.hello {
+    display: flex;
+    flex-direction: column;
+}
+
+.hello .nows {
+    text-align: center;
+}
+
+.hello_img {
+    width: 150px;
+    height: 150px;
+    align-self: center;
+    background-image: url("../images/qingchenzhongwuhuanghunwanshang.jpg");
+    background-size: 204%;
+    background-repeat: no-repeat;
+}
+
+.hello h1 {
+    text-align: center;
+    line-height: 150px;
+}
+
+form {
+    padding: 20px 10vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+form div {
+    line-height: 30px;
+    cursor: default;
+}
+
+form div input {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+/* 二维码 */
+.code {
+    width: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.qrcode {
+    display: none;
+    position: relative;
+    margin-top: 40px;
+    width: 160px;
+    height: 160px;
+    background-image: url("../images/tao.png");
+    background-repeat: no-repeat;
+}
+
+.qrcode h2 {
+    top: -30px;
+    left: 30px;
+    color: orangered;
+    position: absolute;
+}
+
+/* 循环精灵图 */
+.cycle {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cycle li {
+    width: 160px;
+    height: 40px;
+    position: relative;
+    outline: 1px solid #ccc;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.cycle li div {
+    position: absolute;
+    top: 10px;
+    left: 64px;
+    width: 30px;
+    height: 30px;
+    background-image: url("../images/sprite.png");
+    background-repeat: no-repeat;
+}
+
+/* 设置密码 */
+.Pass {
+    display: flex;
+    justify-content: space-around;
+}
+
+.wrong,.right {
+    display: none;
+}
